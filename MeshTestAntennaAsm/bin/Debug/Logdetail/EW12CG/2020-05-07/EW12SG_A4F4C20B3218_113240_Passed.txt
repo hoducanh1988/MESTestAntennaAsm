@@ -1,0 +1,110 @@
+Đọc file suy hao : 
+++++++++++++++++++++++++++++++++++++++++++ 
+... C:\Users\AnhHD\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.2\MeshTestAntennaAsm\bin\Debug\DoSuyHaoXML\PathLoss_TestAntenna_20200424_0937.xml
+...
+... freq = 2412, value = 2
+... freq = 2437, value = 2
+... freq = 2472, value = 2
+... freq = 5180, value = 4
+... freq = 5240, value = 4
+... freq = 5320, value = 4
+... freq = 5500, value = 4
+... freq = 5600, value = 4
+... freq = 5745, value = 4
+... freq = 5825, value = 4
+...
+... result: Passed
+
+
+Ping to DUT 192.168.88.1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... reply from 192.168.88.1: bytes=32 time<1ms TTL=64
+... result: Passed
+
+
+Login ssh to DUT - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... dut ip = 192.168.88.1
+... ssh user = root
+... ssh pass = vnpt
+... result[1]: Passed
+
+
+Get mac ethernet: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... A4:F4:C2:0B:32:18 
+... Completed
+
+
+Init instrument - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... instrument name = E6640A
+... instrument address = TCPIP0::192.168.88.2::inst0::INSTR
+... instrument port = RFIO2
+... result: Passed
+
+
+Off wifi 5G: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... Completed
+
+
+Measure Wifi 2G - Antenna 1 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -15 dBm ~ 20 dBm
+... pathloss value: 2 dBm
+... config instrument: Port RFIO2, standard b, freq 2437
+... config dut: iwpriv wifi0 txchainmask 0x1
+... sleep 2000 ms
+... get power from instrument[1]: -18.63715172 dBm
+... power after add pathloss [1]: -16.63715172 dBm
+... get power from instrument[2]: -9.546190262 dBm
+... power after add pathloss [2]: -7.546190262 dBm
+... result: Passed
+
+
+Measure Wifi 2G - Antenna 2 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -25 dBm ~ 20 dBm
+... pathloss value: 2 dBm
+... config instrument: Port RFIO2, standard b, freq 2437
+... config dut: iwpriv wifi0 txchainmask 0x2
+... sleep 2000 ms
+... get power from instrument[1]: -0.5396739841 dBm
+... power after add pathloss [1]: 1.4603260159 dBm
+... result: Passed
+
+
+Off wifi 2G: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... Completed
+
+
+Measure Wifi 5G - Antenna 1 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... pathloss value: 4 dBm
+... config instrument: Port RFIO2, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x1
+... sleep 2000 ms
+... get power from instrument[1]: -10.75856304 dBm
+... power after add pathloss [1]: -6.75856304 dBm
+... result: Passed
+
+
+Measure Wifi 5G - Antenna 2 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... pathloss value: 4 dBm
+... config instrument: Port RFIO2, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x2
+... sleep 2000 ms
+... get power from instrument[1]: -16.05037498 dBm
+... power after add pathloss [1]: -12.05037498 dBm
+... result: Passed
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Passed
+

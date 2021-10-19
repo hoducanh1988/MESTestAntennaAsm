@@ -1,0 +1,26 @@
+﻿<SettingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Station>1</Station>
+  <JIG>1</JIG>
+  <IPDUT>192.168.88.1</IPDUT>
+  <Username>root</Username>
+  <Password>vnpt</Password>
+  <Measurement_Name>MT8870A</Measurement_Name>
+  <Measurement_Addr>TCPIP0::192.168.3.2::inst0::INSTR</Measurement_Addr>
+  <Measurement_Port>RFIO1</Measurement_Port>
+  <Measurement_PowerLevel2G>-15</Measurement_PowerLevel2G>
+  <Measurement_TriggerLevel2G>-20</Measurement_TriggerLevel2G>
+  <Freq_Channel2G>2437</Freq_Channel2G>
+  <Measurement_PowerLevel5G>-20</Measurement_PowerLevel5G>
+  <Measurement_TriggerLevel5G>-20</Measurement_TriggerLevel5G>
+  <Freq_Channel5G>5180</Freq_Channel5G>
+  <Power_Min_2G_Chain1>-25</Power_Min_2G_Chain1>
+  <Power_Max_2G_Chain1>20</Power_Max_2G_Chain1>
+  <Power_Min_2G_Chain2>-25</Power_Min_2G_Chain2>
+  <Power_Max_2G_Chain2>20</Power_Max_2G_Chain2>
+  <Power_Min_5G_Chain1>-35</Power_Min_5G_Chain1>
+  <Power_Max_5G_Chain1>20</Power_Max_5G_Chain1>
+  <Power_Min_5G_Chain2>-35</Power_Min_5G_Chain2>
+  <Power_Max_5G_Chain2>20</Power_Max_5G_Chain2>
+  <SleepTime>5</SleepTime>
+  <RetryTime>5</RetryTime>
+</SettingInformation>

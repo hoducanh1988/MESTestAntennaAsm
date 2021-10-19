@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeshTestAntennaAsm", "MeshTestAntennaAsm\MeshTestAntennaAsm.csproj", "{042FCBEF-8A70-450E-AE49-AE21BF2EECAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW12S", "EW12S\EW12S.csproj", "{FAFB78BA-A6CF-41E7-87A6-04DD9A157146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW12C", "EW12C\EW12C.csproj", "{AE0127BA-6264-4E6C-9009-05C8FB7A9D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW12CG", "EW12CG\EW12CG.csproj", "{75DA755B-B76B-4A6A-AE4C-20205A15E018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW12SG", "EW12SG\EW12SG.csproj", "{44B5E912-D6D9-4F27-B461-092FDF6BE3F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW30SX", "EW30SX\EW30SX.csproj", "{E43B83C7-E6FC-48F0-A4D8-A3C4609B6095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW30CX", "EW30CX\EW30CX.csproj", "{68A9E048-864E-4071-AC65-8DED2E81F6AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{042FCBEF-8A70-450E-AE49-AE21BF2EECAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042FCBEF-8A70-450E-AE49-AE21BF2EECAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042FCBEF-8A70-450E-AE49-AE21BF2EECAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042FCBEF-8A70-450E-AE49-AE21BF2EECAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFB78BA-A6CF-41E7-87A6-04DD9A157146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFB78BA-A6CF-41E7-87A6-04DD9A157146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFB78BA-A6CF-41E7-87A6-04DD9A157146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFB78BA-A6CF-41E7-87A6-04DD9A157146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0127BA-6264-4E6C-9009-05C8FB7A9D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0127BA-6264-4E6C-9009-05C8FB7A9D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0127BA-6264-4E6C-9009-05C8FB7A9D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0127BA-6264-4E6C-9009-05C8FB7A9D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75DA755B-B76B-4A6A-AE4C-20205A15E018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75DA755B-B76B-4A6A-AE4C-20205A15E018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75DA755B-B76B-4A6A-AE4C-20205A15E018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75DA755B-B76B-4A6A-AE4C-20205A15E018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B5E912-D6D9-4F27-B461-092FDF6BE3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B5E912-D6D9-4F27-B461-092FDF6BE3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B5E912-D6D9-4F27-B461-092FDF6BE3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B5E912-D6D9-4F27-B461-092FDF6BE3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43B83C7-E6FC-48F0-A4D8-A3C4609B6095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43B83C7-E6FC-48F0-A4D8-A3C4609B6095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43B83C7-E6FC-48F0-A4D8-A3C4609B6095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43B83C7-E6FC-48F0-A4D8-A3C4609B6095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A9E048-864E-4071-AC65-8DED2E81F6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A9E048-864E-4071-AC65-8DED2E81F6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A9E048-864E-4071-AC65-8DED2E81F6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A9E048-864E-4071-AC65-8DED2E81F6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4D7D0DE-1AC7-4DF4-A0E6-C7D8C584200C}
+	EndGlobalSection
+EndGlobal

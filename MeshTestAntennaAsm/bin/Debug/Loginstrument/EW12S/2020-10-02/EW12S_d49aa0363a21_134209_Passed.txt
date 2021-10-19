@@ -1,0 +1,217 @@
+*RST
+0,"No error"
+
+:CONF:SRW:SEGM:CLE
+0,"No error"
+
+:CONF:SRW:SEGM:APP AUTODSSS
+0,"No error"
+
+:CONF:SRW:TRIG LEVEL
+0,"No error"
+
+:CONF:SRW:TDEL -1E-05
+0,"No error"
+
+:CONF:SRW:TLEV -20
+0,"No error"
+
+:CONF:SRW:CAPT:MODE PACKET
+0,"No error"
+
+:CONF:SRW:TTIM 1
+0,"No error"
+
+:CONF:SRW:PACK 1
+0,"No error"
+
+:CONF:SRW:WLB:FTYP GAUSSIAN
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:POW ON
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:EVM ON
+0,"No error"
+
+:ROUT:PORT:CONN:DIR PORT1,PORT1
+0,"No error"
+
+:CONF:SRW:ALEV:TIME 0.01
+0,"No error"
+
+:CONF:SRW:FREQ 2437000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -15
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW?
+
+-15
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+:STAT:SRW:MEAS?
+
+1
+
+:FETC:SRW:SUMM:WLAN:POW? 1,1
+
+1,0,1,1,1,-17.51,-20.91,3.40,1,0,-20.91,-20.91,1,1
+
+:CONF:SRW:FREQ 2437000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -15
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW?
+
+-15
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+:STAT:SRW:MEAS?
+
+1
+
+:FETC:SRW:SUMM:WLAN:POW? 1,1
+
+1,0,1,1,1,-16.70,-19.61,2.90,1,0,-19.61,-19.61,1,1
+
+*RST
+0,"No error"
+
+:CONF:SRW:SEGM:CLE
+0,"No error"
+
+:CONF:SRW:SEGM:APP AUTOOFDM
+0,"No error"
+
+:CONF:SRW:TRIG LEVEL
+0,"No error"
+
+:CONF:SRW:TDEL -1E-05
+0,"No error"
+
+:CONF:SRW:TLEV -20
+0,"No error"
+
+:CONF:SRW:CAPT:MODE PACKET
+0,"No error"
+
+:CONF:SRW:TTIM 1
+0,"No error"
+
+:CONF:SRW:PACK 1
+0,"No error"
+
+:CONF:SRW:OFDM:CEST FULLPACKET
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:POW ON
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:EVM ON
+0,"No error"
+
+:ROUT:PORT:CONN:DIR PORT1,PORT1
+0,"No error"
+
+:CONF:SRW:ALEV:TIME 0.01
+0,"No error"
+
+:CONF:SRW:FREQ 5180000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW?
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+:STAT:SRW:MEAS?
+
+1
+
+:FETC:SRW:SUMM:WLAN:POW? 1,1
+
+1,0,1,1,1,-12.92,-17.05,4.13,1,0,-17.05,-17.05,1,1
+
+:CONF:SRW:FREQ 5180000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW?
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+:STAT:SRW:MEAS?
+
+1
+
+:FETC:SRW:SUMM:WLAN:POW? 1,1
+
+1,0,1,1,1,-11.94,-15.92,3.99,1,0,-15.92,-15.92,1,1
+
+

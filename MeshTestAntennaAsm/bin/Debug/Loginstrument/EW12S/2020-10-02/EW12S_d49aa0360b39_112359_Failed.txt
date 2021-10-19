@@ -1,0 +1,343 @@
+*RST
+0,"No error"
+
+:CONF:SRW:SEGM:CLE
+0,"No error"
+
+:CONF:SRW:SEGM:APP AUTODSSS
+0,"No error"
+
+:CONF:SRW:TRIG LEVEL
+0,"No error"
+
+:CONF:SRW:TDEL -1E-05
+0,"No error"
+
+:CONF:SRW:TLEV -20
+0,"No error"
+
+:CONF:SRW:CAPT:MODE PACKET
+0,"No error"
+
+:CONF:SRW:TTIM 1
+0,"No error"
+
+:CONF:SRW:PACK 20
+0,"No error"
+
+:CONF:SRW:WLB:FTYP GAUSSIAN
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:POW ON
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:EVM ON
+0,"No error"
+
+:CONF:SRW:POW 20
+0,"No error"
+
+:ROUT:PORT:CONN:DIR PORT1,PORT1
+0,"No error"
+
+:CONF:SRW:ALEV:TIME 0.01
+0,"No error"
+
+:CONF:SRW:FREQ 2437000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,1,1,-1.44,-4.71,3.26,1,1,-4.71,-4.71,2,1
+
+:CONF:SRW:FREQ 2437000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,1,1,-27.76,-33.83,6.07,1,0,-33.83,-33.83,1,1
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,1,1,-14.03,-17.68,3.65,1,0,-17.68,-17.68,1,1
+
+*RST
+0,"No error"
+
+:CONF:SRW:SEGM:CLE
+0,"No error"
+
+:CONF:SRW:SEGM:APP AUTOOFDM
+0,"No error"
+
+:CONF:SRW:TRIG LEVEL
+0,"No error"
+
+:CONF:SRW:TDEL -1E-05
+0,"No error"
+
+:CONF:SRW:TLEV -20
+0,"No error"
+
+:CONF:SRW:CAPT:MODE PACKET
+0,"No error"
+
+:CONF:SRW:TTIM 1
+0,"No error"
+
+:CONF:SRW:PACK 20
+0,"No error"
+
+:CONF:SRW:OFDM:CEST FULLPACKET
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:POW ON
+0,"No error"
+
+:CONF:SRW:SEL:WLAN:EVM ON
+0,"No error"
+
+:CONF:SRW:POW 20
+0,"No error"
+
+:ROUT:PORT:CONN:DIR PORT1,PORT1
+0,"No error"
+
+:CONF:SRW:ALEV:TIME 0.01
+0,"No error"
+
+:CONF:SRW:FREQ 5180000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,0
+
+1,0,1,0
+
+1,0,1,0
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,0
+
+1,0,1,0
+
+1,0,1,0
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,0
+
+1,0,1,0
+
+1,0,1,0
+
+:CONF:SRW:FREQ 5180000000
+0,"No error"
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,0
+
+1,0,1,0
+
+1,0,1,0
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,0
+
+1,0,1,0
+
+1,0,1,0
+
+:INIT:SRW:ALEV
+0,"No error"
+
+*WAI
+0,"No error"
+
+:CONF:SRW:POW -20
+0,"No error"
+
+*WAI
+0,"No error"
+
+-20
+
+:INIT:SRW
+0,"No error"
+
+*WAI
+0,"No error"
+
+1
+
+1,0,1,0
+
+1,0,1,0
+
+1,0,1,0
+
+

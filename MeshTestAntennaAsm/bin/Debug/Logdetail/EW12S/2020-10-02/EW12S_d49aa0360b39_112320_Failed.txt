@@ -1,0 +1,72 @@
+Đọc file suy hao : 
+++++++++++++++++++++++++++++++++++++++++++ 
+... C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.4\MeshTestAntennaAsm\bin\Debug\DoSuyHaoXML\PathLoss_TestAntenna_20200424_0937.xml
+...
+... freq = 2412, value = 2
+... freq = 2437, value = 2
+... freq = 2472, value = 2
+... freq = 5180, value = 4
+... freq = 5240, value = 4
+... freq = 5320, value = 4
+... freq = 5500, value = 4
+... freq = 5600, value = 4
+... freq = 5745, value = 4
+... freq = 5825, value = 4
+...
+... result: Passed
+... time elapsed: 0 ms
+
+
+Ping to DUT 192.168.88.1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... reply from 192.168.88.1: bytes=32 time<1ms TTL=64
+... result: Passed
+... time elapsed: 6 ms
+
+
+Login ssh to DUT - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... dut ip = 192.168.88.1
+... ssh user = root
+... ssh pass = vnpt
+... result[1]: Passed
+... time elapsed: 1443 ms
+
+
+Get mac ethernet: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... d49aa0360b39 
+... Completed
+... time elapsed: 53 ms
+
+
+Init instrument - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... instrument name = MT8870A
+... instrument address = TCPIP0::192.168.1.2::inst0::INSTR
+... instrument port = RFIO4
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: Insufficient location information or the device or resource is not present in the system.  VISA error code -1073807343 (0xBFFF0011), ErrorResourceNotFound ---> NationalInstruments.VisaNS.VisaException: Insufficient location information or the device or resource is not present in the system.  VISA error code -1073807343 (0xBFFF0011), ErrorResourceNotFound
+   --- End of inner exception stack trace ---
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session..ctor(String resourceName, AccessModes accessMode, Int32 openTimeout, String expectedResourceName)
+   at NationalInstruments.VisaNS.MessageBasedSession..ctor(String resourceName, AccessModes accessMode, Int32 openTimeout, String expectedResourceName)
+   at NationalInstruments.VisaNS.TcpipSession..ctor(String resourceName, AccessModes accessMode, Int32 openTimeout, Boolean checkResourceType)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at NationalInstruments.VisaNS.ResourceManager.Open(String resourceName, AccessModes accessMode, Int32 openTimeout)
+   at NationalInstruments.VisaNS.ResourceManager.Open(String resourceName)
+   at EW12S.Function.MT8870A_VISA..ctor(String MeasureEquip_IP) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.4\EW12S\Instrument\MT8870A.cs:line 16
+[MT8870A_VISA]Không kết nối được với máy đo IP = TCPIP0::192.168.1.2::inst0::INSTR
+... result: Failed
+... time elapsed: 2077 ms
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Failed
+... total time = 3585 ms.
+

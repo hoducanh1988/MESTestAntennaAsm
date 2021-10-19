@@ -1,0 +1,104 @@
+Đọc file suy hao : 
+++++++++++++++++++++++++++++++++++++++++++ 
+... C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.4\MeshTestAntennaAsm\bin\Debug\DoSuyHaoXML\PathLoss_TestAntenna_20200424_0937.xml
+...
+... freq = 2412, value = 2
+... freq = 2437, value = 2
+... freq = 2472, value = 2
+... freq = 5180, value = 4
+... freq = 5240, value = 4
+... freq = 5320, value = 4
+... freq = 5500, value = 4
+... freq = 5600, value = 4
+... freq = 5745, value = 4
+... freq = 5825, value = 4
+...
+... result: Passed
+... time elapsed: 0 ms
+
+
+Ping to DUT 192.168.88.1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... reply from 192.168.88.1: bytes=32 time<1ms TTL=64
+... result: Passed
+... time elapsed: 8 ms
+
+
+Login ssh to DUT - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... dut ip = 192.168.88.1
+... ssh user = root
+... ssh pass = vnpt
+... result[1]: Passed
+... time elapsed: 1405 ms
+
+
+Get mac ethernet: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... d49aa036467d 
+... Completed
+... time elapsed: 104 ms
+
+
+Init instrument - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... instrument name = MT8870A
+... instrument address = TCPIP0::192.168.3.2::inst0::INSTR
+... instrument port = RFIO1
+... result: Passed
+... time elapsed: 54 ms
+
+
+Measure Wifi 2G - Antenna 1 - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -25 dBm ~ 20 dBm
+... pathloss value: 2 dBm
+... config instrument: Port RFIO1, standard b, freq 2437
+... config dut: iwpriv wifi0 txchainmask 0x1
+... get power from instrument[1]: -999 dBm
+... power after add pathloss [1]: -997 dBm
+... result: Failed
+... time elapsed: 1141 ms
+
+
+Measure Wifi 2G - Antenna 2 - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -25 dBm ~ 20 dBm
+... pathloss value: 2 dBm
+... config instrument: Port RFIO1, standard b, freq 2437
+... config dut: iwpriv wifi0 txchainmask 0x2
+... get power from instrument[1]: -999 dBm
+... power after add pathloss [1]: -997 dBm
+... result: Failed
+... time elapsed: 1126 ms
+
+
+Measure Wifi 5G - Antenna 1 - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... pathloss value: 4 dBm
+... config instrument: Port RFIO1, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x1
+... get power from instrument[1]: -999 dBm
+... power after add pathloss [1]: -995 dBm
+... result: Failed
+... time elapsed: 1229 ms
+
+
+Measure Wifi 5G - Antenna 2 - Retry 1: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... pathloss value: 4 dBm
+... config instrument: Port RFIO1, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x2
+... get power from instrument[1]: -999 dBm
+... power after add pathloss [1]: -995 dBm
+... result: Failed
+... time elapsed: 1478 ms
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Failed
+... total time = 6560 ms.
+

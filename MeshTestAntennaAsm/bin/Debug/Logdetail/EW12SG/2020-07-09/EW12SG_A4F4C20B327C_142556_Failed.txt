@@ -1,0 +1,197 @@
+Đọc file suy hao : 
+++++++++++++++++++++++++++++++++++++++++++ 
+... C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\MeshTestAntennaAsm\bin\Debug\DoSuyHaoXML\PathLoss_TestAntenna_20200424_0937.xml
+...
+... freq = 2412, value = 2
+... freq = 2437, value = 2
+... freq = 2472, value = 2
+... freq = 5180, value = 4
+... freq = 5240, value = 4
+... freq = 5320, value = 4
+... freq = 5500, value = 4
+... freq = 5600, value = 4
+... freq = 5745, value = 4
+... freq = 5825, value = 4
+...
+... result: Passed
+
+
+Ping to DUT 192.168.88.1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... reply from 192.168.88.1: bytes=32 time<1ms TTL=64
+... result: Passed
+
+
+Login ssh to DUT - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... dut ip = 192.168.88.1
+... ssh user = root
+... ssh pass = vnpt
+... result[1]: Passed
+
+
+Get mac ethernet: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... A4:F4:C2:0B:32:7C 
+... Completed
+
+
+Init instrument - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... instrument name = E6640A
+... instrument address = TCPIP0::A-E6640A-50637::inst1::INSTR
+... instrument port = RFIO1
+... result: Passed
+
+
+Off wifi 5G: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... Completed
+
+
+Measure Wifi 2G - Antenna 1 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -25 dBm ~ 20 dBm
+... pathloss value: 2 dBm
+... config instrument: Port RFIO1, standard b, freq 2437
+... config dut: iwpriv wifi0 txchainmask 0x1
+... sleep 8000 ms
+... get power from instrument[1]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [1]: -997 dBm
+... get power from instrument[2]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [2]: -997 dBm
+... get power from instrument[3]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [3]: -997 dBm
+... result: Failed
+
+
+Measure Wifi 2G - Antenna 2 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -25 dBm ~ 20 dBm
+... pathloss value: 2 dBm
+... config instrument: Port RFIO1, standard b, freq 2437
+... config dut: iwpriv wifi0 txchainmask 0x2
+... sleep 8000 ms
+... get power from instrument[1]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [1]: -997 dBm
+... get power from instrument[2]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [2]: -997 dBm
+... get power from instrument[3]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [3]: -997 dBm
+... result: Failed
+
+
+Off wifi 2G: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... Completed
+
+
+Measure Wifi 5G - Antenna 1 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... pathloss value: 4 dBm
+... config instrument: Port RFIO1, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x1
+... sleep 8000 ms
+... get power from instrument[1]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [1]: -995 dBm
+... get power from instrument[2]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [2]: -995 dBm
+... get power from instrument[3]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [3]: -995 dBm
+... result: Failed
+
+
+Measure Wifi 5G - Antenna 2 - Retry 3: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... pathloss value: 4 dBm
+... config instrument: Port RFIO1, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x2
+... sleep 8000 ms
+... get power from instrument[1]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [1]: -995 dBm
+... get power from instrument[2]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.ReadString(Int32 countToRead)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 137
+-999 dBm
+... power after add pathloss [2]: -995 dBm
+... get power from instrument[3]: NationalInstruments.VisaNS.VisaException: Timeout expired before operation completed.  VISA error code -1073807339 (0xBFFF0015), ErrorTimeout
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session.CheckStatusAndThrow(Int32 status)
+   at NationalInstruments.VisaNS.Internal.MessageBasedSessionImpl.Write(String data)
+   at NationalInstruments.VisaNS.MessageBasedSession.Query(String dataToWrite)
+   at EW12SG.Function.E6640A_VISA.checkBusyState(MessageBasedSession mbSession, String command) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 267
+   at EW12SG.Function.E6640A_VISA.config_Instrument_get_Power(String Trigger, Int32 power_range, String wifi) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.3\EW12SG\Instrument\E6640A.cs:line 130
+-999 dBm
+... power after add pathloss [3]: -995 dBm
+... result: Failed
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Failed
+

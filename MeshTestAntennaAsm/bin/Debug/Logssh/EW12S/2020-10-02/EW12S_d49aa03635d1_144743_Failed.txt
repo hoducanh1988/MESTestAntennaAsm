@@ -1,0 +1,33 @@
+
+
+BusyBox v1.19.4 (2020-09-29 15:11:12 +07) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+cat /sys/class/net/eth0/address
+o         o o         o ooooooooo  ooooooooo ooooooooo               o
+o        o  oo        o o        o     o         o                   o
+o       o   o o       o o        o     o         o                   o
+o      o    o  o      o o        o     o         o                   o
+o     o     o   o     o ooooooooo      o         o       oo     oo   o
+o    o      o    o    o o              o         o      o  o   o  o  oooooo
+o   o       o     o   o o              o         o     o    o o      o     o
+o  o        o      o  o o              o         o     oooooo o      o     o
+o o         o       o o o              o         o     o      o      o     o
+oo          o        oo o              o         o      o  o   o  o  o     o
+o           o         o o              o         o       oo     oo   o     o
+
+root@VNPT:~# cat /sys/class/net/eth0/address
+d4:9a:a0:36:35:d1
+root@VNPT:~# iwpriv wifi0 txchainmask 0x1
+root@VNPT:~# ifconfig ath0 down
+root@VNPT:~# ifconfig ath0 up
+root@VNPT:~# iwpriv ath0 bintval 40
+root@VNPT:~# iwpriv wifi0 txchainmask 0x2
+root@VNPT:~# ifconfig ath0 down
+root@VNPT:~# ifconfig ath0 up
+root@VNPT:~# iwpriv ath0 bintval 40
+root@VNPT:~# iwpriv wifi1 txchainmask 0x1
+root@VNPT:~# iwpriv ath1 bintval 40
+root@VNPT:~# iwpriv wifi1 txchainmask 0x2
+root@VNPT:~# iwpriv ath1 bintval 40
+root@VNPT:~# 

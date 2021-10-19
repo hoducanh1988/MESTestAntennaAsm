@@ -1,0 +1,44 @@
+APP INFO
+Version: EW30SXVN0U0001 - Build time: 28/09/2021 15:30
++++++++++++++++++++++++++++++++++++++++++
+SETTING INFO
+Station=1
+JIG=1
+IPDUT=192.168.88.1
+Username=root
+Password=vnpt
+Measurement_Name=MT8870A
+Measurement_Addr=TCPIP0::192.168.1.5::inst0::INSTR
+Measurement_Port=RFIO1
+Measurement_PowerLevel2G=-15
+Measurement_TriggerLevel2G=-20
+Freq_Channel2G=2437
+Measurement_PowerLevel5G=-20
+Measurement_TriggerLevel5G=-20
+Freq_Channel5G=5180
+Power_Min_2G_Chain1=-25
+Power_Max_2G_Chain1=20
+Power_Min_2G_Chain2=-25
+Power_Max_2G_Chain2=20
+Power_Min_5G_Chain1=-35
+Power_Max_5G_Chain1=20
+Power_Min_5G_Chain2=-35
+Power_Max_5G_Chain2=20
+SleepTime=5
+RetryTime=3
++++++++++++++++++++++++++++++++++++++++++
+
+Đọc file suy hao : 
+++++++++++++++++++++++++++++++++++++++++++ 
+... G:\Backup_Tool_Test\repos\06.MESH\MeshTestAntennaAsm\MeshTestAntennaAsm\bin\Debug\EW30SX\DoSuyHaoXML\PathLoss_TestAntenna_20200424_0937.xml
+...
+...
+... result: Failed, file is not existed.
+... time elapsed: 0 ms
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Failed
+... total time = 1 ms.
+

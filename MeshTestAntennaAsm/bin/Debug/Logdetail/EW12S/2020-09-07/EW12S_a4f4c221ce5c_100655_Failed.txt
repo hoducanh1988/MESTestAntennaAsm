@@ -1,0 +1,53 @@
+Ping to DUT 192.168.88.1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... reply from 192.168.88.1: bytes=32 time<1ms TTL=64
+... result: Passed
+... time elapsed: 6 ms
+
+
+Login ssh to DUT - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... dut ip = 192.168.88.1
+... ssh user = root
+... ssh pass = vnpt
+... result[1]: Passed
+... time elapsed: 1455 ms
+
+
+Get mac ethernet: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... a4:f4:c2:21:ce:5c 
+... Completed
+... time elapsed: 17331 ms
+
+
+Init instrument - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... instrument name = E6640A
+... instrument address = TCPIP0::192.168.88.2::inst1::INSTR
+... instrument port = RFIO1
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: Insufficient location information or the device or resource is not present in the system.  VISA error code -1073807343 (0xBFFF0011), ErrorResourceNotFound ---> NationalInstruments.VisaNS.VisaException: Insufficient location information or the device or resource is not present in the system.  VISA error code -1073807343 (0xBFFF0011), ErrorResourceNotFound
+   --- End of inner exception stack trace ---
+   at NationalInstruments.VisaNS.Internal.ErrorChecker.CheckStatusAndThrow(Int32 status, VisaHandle visaObject)
+   at NationalInstruments.VisaNS.Session..ctor(String resourceName, AccessModes accessMode, Int32 openTimeout, String expectedResourceName)
+   at NationalInstruments.VisaNS.MessageBasedSession..ctor(String resourceName, AccessModes accessMode, Int32 openTimeout, String expectedResourceName)
+   at NationalInstruments.VisaNS.TcpipSession..ctor(String resourceName, AccessModes accessMode, Int32 openTimeout, Boolean checkResourceType)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at NationalInstruments.VisaNS.ResourceManager.Open(String resourceName, AccessModes accessMode, Int32 openTimeout)
+   at NationalInstruments.VisaNS.ResourceManager.Open(String resourceName)
+   at EW12S.Function.E6640A_VISA..ctor(String MeasureEquip_IP) in C:\Users\chien\source\repos\06. MESH\MeshTestAntennaAsm_Ver1.0.0.4_RDT_NotYet\EW12S\Instrument\E6640A.cs:line 16
+[E6640A_VISA]Không kết nối được với máy đo IP = TCPIP0::192.168.88.2::inst1::INSTR
+... result: Failed
+... time elapsed: 2069 ms
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Failed
+... total time = 20 sec.
+

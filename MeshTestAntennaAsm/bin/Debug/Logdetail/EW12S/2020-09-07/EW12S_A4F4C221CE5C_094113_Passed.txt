@@ -1,0 +1,67 @@
+Ping to DUT 192.168.88.1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... reply from 192.168.88.1: bytes=32 time<1ms TTL=64
+... result: Passed
+... time elapsed: 5 ms
+
+
+Login ssh to DUT - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... dut ip = 192.168.88.1
+... ssh user = root
+... ssh pass = vnpt
+... result[1]: Passed
+... time elapsed: 1433 ms
+
+
+Get mac ethernet: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... A4:F4:C2:21:CE:5C 
+... Completed
+... time elapsed: 3405 ms
+
+
+Init instrument - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... instrument name = E6640A
+... instrument address = TCPIP0::192.168.88.2::inst0::INSTR
+... instrument port = RFIO1
+... result: Passed
+... time elapsed: 56 ms
+
+
+Off wifi: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... Completed
+... time elapsed: 902 ms
+
+
+Measure Wifi 5G - Antenna 1 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... config instrument: Port RFIO1, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x1
+... sleep 5000 ms
+... get power from instrument[1]: -999 dBm
+...
+... get power from instrument[2]: -23.05646133 dBm
+... result: Passed
+... time elapsed: 9352 ms
+
+
+Measure Wifi 5G - Antenna 2 - Retry 5: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... power limit: -35 dBm ~ 20 dBm
+... config instrument: Port RFIO1, standard a, freq 5180
+... config dut: iwpriv wifi1 txchainmask 0x2
+... sleep 5000 ms
+... get power from instrument[1]: -20.70163345 dBm
+... result: Passed
+... time elapsed: 3727 ms
+
+
+End test: 
+++++++++++++++++++++++++++++++++++++++++++ 
+... total result = Passed
+... total time = 18 sec.
+
